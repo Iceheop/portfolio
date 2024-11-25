@@ -32,10 +32,13 @@ const { title, theme } = Astro.props;
 
 <style is:global>
 	:root {
-		--bg: #1E1E1E;
-		--dark: #0C0C0C;
-		--yellow: #DFB02A;
-		--orange: #CB7538;
+		--dark: #1E1E1E;
+		--bg: #0C0C0C;
+		--dark-op: #0c0c0ce5;
+		--green: #198754;
+		--teal: #20c997;
+		/* --yellow: #DFB02A; */
+		/* --orange: #CB7538; */
 	}
 	* {
 		margin: 0 !important;
@@ -56,10 +59,14 @@ const { title, theme } = Astro.props;
 		object-position: top;
 	}
 	.text-gradient {
-        background: linear-gradient(to right, var(--orange), var(--yellow)); -webkit-background-clip: text; color: transparent;
+        background: linear-gradient(to right, var(--green), var(--teal)); 
+		-webkit-background-clip: text; color: transparent;
     }
 	.bg-dark {
         background-color: var(--dark) !important;
+    }
+	.bg-dark-op {
+        background-color: var(--dark-op) !important;
     }
 </style>
 
