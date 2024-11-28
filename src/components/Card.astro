@@ -1,0 +1,28 @@
+
+<article class="w-100 bg-gradient ratio ratio-16x9 rounded-4 overflow-hidden">
+    <img src="./p1.png" alt="Project#1" class="fimg-fluid object-fit-cover rounded-2">
+    <section class="bg-dark w-100 h-100 opacity-50"></section>
+</article>
+<section class="mt-2 d-flex justify-content-between align-items-center">
+    <h2 class="fs-5">Sound Cloud Desing</h2>
+    <h2 class="fs-5 text-gradient">Desing</h2>
+</section>
+
+<style>
+    article {
+        max-height: 450px;
+        img {
+            transform: translate(3rem,3rem) rotate(-3deg);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+    article:hover {
+        img {
+            transform: translate(3rem,2.1rem) rotate(0deg) scale(1.1);
+        }
+    }
+
+    .bg-gradient  {
+        background: linear-gradient(to right, var(--yellow), var(--orange)) !important; 
+    }
+</style>
